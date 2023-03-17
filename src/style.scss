@@ -1,0 +1,49 @@
+
+//FONT-FAMILY
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600&display=swap');
+
+$bilbo-swash-caps: 'Edu TAS Beginner', cursive; 
+
+$font-family-base:  $bilbo-swash-caps;
+
+//-------------------------------------------
+
+//CAMBIO COLOR PRIMARY
+$pink-sass: #cf4b9d;
+$primary: $pink-sass;
+
+//-------------------------------------------
+
+//COLOR FONDO Y COLOR LETRA DE CARD
+$card-bg: #222121;
+$card-color: #ffffff;
+
+//-------------------------------------------
+
+//USO EXTEND
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container-altura{
+    height: 100vh;
+}
+
+.card-title{
+    letter-spacing: 0.1rem;
+    text-align: center
+}
+
+.card-text{
+    @extend .card-title
+}
+
+.boton-container{
+    @extend  .card-container
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
